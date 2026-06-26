@@ -1,0 +1,8 @@
+[
+  {
+    "testName": "User API Test",
+    "method": "GET",
+    "endpoint": "https://jsonplaceholder.typicode.com/users/1",
+    "expectedStatusCode": 200
+  }
+]

@@ -1,0 +1,144 @@
+{
+  "tests": [
+    {
+      "testName": "Get User by ID",
+      "method": "GET",
+      "endpoint": "https://jsonplaceholder.typicode.com/users/1",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get All Users",
+      "method": "GET",
+      "endpoint": "https://jsonplaceholder.typicode.com/users",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get Post by ID",
+      "method": "GET",
+      "endpoint": "https://jsonplaceholder.typicode.com/posts/5",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get Comments for Post",
+      "method": "GET",
+      "endpoint": "https://jsonplaceholder.typicode.com/posts/1/comments",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get Album by ID",
+      "method": "GET",
+      "endpoint": "https://jsonplaceholder.typicode.com/albums/3",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get Todo by ID",
+      "method": "GET",
+      "endpoint": "https://jsonplaceholder.typicode.com/todos/10",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Create New Post",
+      "method": "POST",
+      "endpoint": "https://jsonplaceholder.typicode.com/posts",
+      "expectedStatusCode": 201,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "title": "API Testing Framework Demo",
+        "body": "This post was created by the test runner.",
+        "userId": 1
+      }
+    },
+    {
+      "testName": "Update Post (PUT)",
+      "method": "PUT",
+      "endpoint": "https://jsonplaceholder.typicode.com/posts/1",
+      "expectedStatusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "id": 1,
+        "title": "Updated Post Title",
+        "body": "Updated post body content.",
+        "userId": 1
+      }
+    },
+    {
+      "testName": "Get Photos by Album",
+      "method": "GET",
+      "endpoint": "https://jsonplaceholder.typicode.com/albums/1/photos",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Delete Post",
+      "method": "DELETE",
+      "endpoint": "https://jsonplaceholder.typicode.com/posts/1",
+      "expectedStatusCode": 200
+    },
+    
+  
+    {
+      "testName": "Get All Products",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/products",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get Product By ID",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/products/1",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Search Products",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/products/search?q=phone",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get All Carts",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/carts",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get Cart By ID",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/carts/1",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get All Quotes",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/quotes",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get Quote By ID",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/quotes/1",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get All Recipes",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/recipes",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get Recipe By ID",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/recipes/1",
+      "expectedStatusCode": 200
+    },
+    {
+      "testName": "Get All Users",
+      "method": "GET",
+      "endpoint": "https://dummyjson.com/users",
+      "expectedStatusCode": 200
+    }
+  ]
+}
+  
